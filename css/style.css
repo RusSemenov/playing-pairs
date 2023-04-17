@@ -1,0 +1,71 @@
+body {
+  position: relative;
+  background-image: url("../image-game.jpg");
+}
+
+.game {
+  position: absolute;
+  left: 40%;
+  padding-top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 208px;
+}
+
+.card {
+  padding: 15px 20px;
+  background-color: rgba(0, 33, 10, 0.5);
+  border: 1px solid green;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  color: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color .2s, color .2s;
+}
+
+.card:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.card.open {
+  background-color: bisque;
+  color: black;
+}
+
+.card.success {
+  background-color: #50C878;
+  transform: scale(0.95);
+  color: white;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  margin-top: 15px;
+  padding: 20px 10px;
+  color: white;
+  background-color: blue;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition:  background-color .2s;
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: 2px solid #50C878;
+  outline-offset: 2px;
+}
+
+.button:hover {
+  background-color: rgb(3, 3, 132);
+}
+
+.button:active {
+  background-color: rgb(98, 98, 215);
+}
+
+
